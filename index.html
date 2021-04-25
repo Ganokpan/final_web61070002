@@ -4,57 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/2096/2096287.png">
     <title>Final-web61070002</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="#name">Ganokpan</a>
-        <a href="#capricorn">Capricorn</a>
-        <a href="#aquarius">Aquarius</a>
-        <a href="#pisces">Pisces</a>
+
+    <div class="container">
+        <div class="navbar">
+            <ul class="nav1">
+                <a>Ganokpan</a>
+            </ul>
+            <ul class="nav2">
+                <a href="#" class="toggleNav">☰</a>
+                <!--ยังทำให้มันเปิดไม่ไดเป็นไรไม่รู้ ไม่รู้ว่าต้องมีคลาสคีอไหม หรืออาจจะต้องทำปุ่มแล้วให้มันแสดงข้อมูล-->
+                <a href="https://www.facebook.com/goy.ganok/" class="fa fa-facebook" style="color: #794f43;"></a>
+                <a href="mailto:someone@email.com" class="fa fa-envelope" style="color: #794f43;"></a>
+                <a href="https://www.youtube.com/channel/UCLP4RTtcEltoXgf5spJIQ2Q" class="fa fa-youtube-play"
+                    style="color: #794f43;"></a>
+            </ul>
+        </div>
+
+        <!--portfolio first page-->
+        <section class="one">
+            <div class="title">
+                <h1 class="port" style="margin-top: 30vh;">
+                    Portfolio
+                </h1>
+                <h2 class="port">
+                    Animator
+                </h2>
+                <div class="icon-scroll">
+                    <p class="text1">Scroll down</p>
+                </div>
+            </div>
+        </section>
+        <!--graph-->
+        <section class="two">
+            <div class="data">
+                <div class="info">
+                    <p class="skill">
+                        Video, 3D software
+                    </p>
+                    <img src="https://lifestyle.campus-star.com/app/uploads/2015/08/anigif_enhanced-7962-1435248989-3.gif" alt="" class="graph">
+                </div>
+            </div>
+            <!--model-->
+            <div class="data">
+                <div class="info">
+                    <p class="skill">
+                        Model Portfolio
+                    </p>
+                    
+                </div>
+            </div>
+            <!--video-->
+            <div class="data">
+                <div class="info">
+                    <p class="skill">
+                        Animation Portfolio
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--contact-->
+        <section class="three">
+            <div class="data">
+                <div class="info">
+                    <p>
+                        contact
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
-    <section class="one">
-        <div class="title">
-            <h1>
-                Portfolio
-            </h1>
-            <h2>
-                Animator
-            </h2>
-            <div class="icon-scroll"></div>
-            <p style="font-family: 'Prompt', sans-serif; font-size: 30px; margin: 80px;">Scroll down</p>
-        </div>
-        </div>
-    </section>
-    <section class="two">
-        <div class="data">
-            <div class="info">
-                <p>
-                    weehfkdsjh
-                </p>
-            </div>
-        </div>
-        <div class="data">
-            <div class="info">
-                <p>
-                    weehfkdsjh
-                </p>
-            </div>
-        </div>
-        <div class="data">
-            <div class="info">
-                <p>
-                    weehfkdsjh
-                </p>
-            </div>
-        </div>
-    </section>
-    <!--contact is three-->
-    <section class="three">
-    </section>
+    <script>
+        $(function () {
+            $('.toggleNav').on('click', function () {
+                $('.nav2 .op').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
