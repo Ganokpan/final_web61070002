@@ -149,16 +149,24 @@ body{
   align-items: center;
   text-align: center;
   width: 70%;
+  /*height: 60%;*/
   margin-left: 15%;
 }
 
 /*Third page*/
 .flip-card {
   background-color: transparent;
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 330px;
   perspective: 1000px;
-  flex: 1 1 calc((100% / 3) - 20px);
+  align-content: space-around;
+}
+
+.cardborder{
+  display: flex;
+  flex: 1 1 calc((100% / 3));
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .flip-card-inner {
@@ -201,13 +209,33 @@ body{
   
 }
 
+/*four page*/
+.ani{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 20px;
+}
+.aniPort{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+}
+
+/*Five page*/
+.text2{
+  width: 50%;
+}
+
 /*setting next page*/
 .data {
   width: 100%;
   height: 90vh;
   position: relative;
   margin: 50px 0 50px 0;
-  background: rgb(187, 22, 22);
 }
 .info {
   width: 100%;
@@ -217,7 +245,22 @@ body{
   margin-left: -800px;
   top: 50%;
   margin-top: -50vh;*/
-  background: rgb(162, 192, 30);
+}
+
+.data2, .data3{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 50px 0 50px 0;
+}
+.info2, .info3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*left: 45%;
+  margin-left: -800px;
+  top: 50%;
+  margin-top: -50vh;*/
 }
 /*setting next page end here*/
  
@@ -228,5 +271,30 @@ body{
   }
   .graph{
     position: relative;
+  }
+
+  .data2 {
+    width: 100%;
+    height: 2350px;
+  }
+  .info2 {
+    width: 100%;
+    height: 2350px;
+  }
+  .aniPort{
+    width: 330px;
+    margin-right: 20px;
+    margin: 10%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px){
+  .data2 {
+    width: 100%;
+    height: 1300px;
+  }
+  .info2 {
+    width: 100%;
+    height: 1300px;
   }
 }
