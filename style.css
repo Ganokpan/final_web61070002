@@ -7,10 +7,7 @@ body{
   width: 100%;
   background-color: #FFECE5;
 }
-.container{
-  display: flex;
-  flex-direction: column;
-}
+
 
 /*Nav Bar*/
 .navbar{
@@ -50,30 +47,6 @@ body{
   .toggleNav {
     display: none;
   }
-
-@media all and (max-width:576px) {
-.navbar{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex: 1;
-}
-.nav2 a.toggleNav {
-  display: block
-}
-    
-.op.open{
-  display: flex;
-}
-  
-.op{
-  display: none;
-}
-  
-.nav2 ul a .op{
-  width: 100%;
-}
-}
 
 /*First page*/
 .title {
@@ -148,13 +121,10 @@ body{
 }
 
 .graph{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 70%;
-  /*height: 60%;*/
-  margin-left: 15%;
+  width: 80%;
+  height: 70%;
+  margin-left: 10%;
+  margin-top: 4%;
 }
 
 /*Third page*/
@@ -225,15 +195,16 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    text-align: center;
     margin-left: 20px;
+    align-content: center;
+    margin-top: 4%;
 }
 .aniPort{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 50%;
+  width: 45%;
 }
 
 /*Five page*/
@@ -241,10 +212,33 @@ img{
   width: 50%;
 }
 
+.ani2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  align-content: center;
+  margin-top: 4%;
+}
+
+.aniPort2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 45%;
+}
+
+.skill2{
+  display: flex;
+  font-size: 200%;
+  color: #794f43;
+}
+
 /*setting next page*/
 .data {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   position: relative;
   margin: 50px 0 50px 0;
 }
@@ -273,24 +267,49 @@ img{
   top: 50%;
   margin-top: -50vh;*/
 }
-
-.two{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-/*setting next page end here*/
  
-/*responsibe*/
-@media (max-width: 651px) {
+/*responsive*/
+@media all and (max-width:576px) {
+  .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .nav2 a.toggleNav {
+    display: block
+  }
+      
+  .nav2 ul a.open{
+    display: flex;
+  }
+    
+  ul.nav2 a{
+    display: none;
+  }
+    
+  .nav2 ul a .op{
+    width: 100%;
+  }
+
   .icon-scroll{
     position: relative;
   }
   .graph{
     position: relative;
   }
+  .ani2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-left: 20px; */
+    align-content: space-around;
+    /* margin-top: 4%; */
+    flex-wrap: wrap
+  }
+  }
 
+@media (max-width: 651px) {
   .data2 {
     width: 100%;
     height: 2350px;
@@ -306,7 +325,7 @@ img{
   }
 }
 
-@media (min-width: 652px){
+@media (min-width: 652px) and (max-width: 991px){
   .data2 {
     width: 100%;
     height: 1300px;
