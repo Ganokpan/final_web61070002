@@ -51,7 +51,7 @@
                     <p class="skill">
                         Video and 3D software
                     <hr></p>
-                    <img src="img/graphh.jpg" alt="" class="graph">
+                    <img src="img/graph.gif" alt="" class="graph">
                 </div>
             </div>
             <!--model-->
@@ -189,15 +189,15 @@
                             <p class="skill2">
                                 About me
                             </p>
+                            <p style="font-family: 'Mitr', sans-serif; font-size: large;">
+                                &emsp;ฉันชื่อนางสาวกนกพรรณ ตันนิธิสถาพร ปัจจุบันเรียนอยู่ปริญญาตรีชั้นปีที่ 3 แขนงการพัฒนาสื่อประสมและเกม
+                                คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                            </p>
                             <p style="font-family: 'Mitr', sans-serif; font-size: large;">&emsp;ฉันมีความสนใจในสายอาชีพ Animator
                                 ฉันมีความสามารถในการปั้นโมเดลเพื่อเป็นต้นแบบของการทำการเคลื่อนไหว
                                 และสามารถจินตนาการการเคลื่อนไหวของตัวต้นแบบ หลังจากนั้นจึงทำตามที่จินตนาการไว้
                                 นอกจากนี้ฉันสามารถตัดต่อวิดีโอเพื่อเล่าเรื่องและสื่อความหมายได้
                                 ฉันมีความพยายามในการเรียนรู้สิ่งใหม่ๆและสามารถทำงานร่วมกับผู้อื่นได้
-                            </p>
-                            <p style="font-family: 'Mitr', sans-serif; font-size: large;">
-                                &emsp;ปัจจุบันฉันเรียนอยู่ปริญญาตรีชั้นปีที่ 3 แขนงการพัฒนาสื่อประสมและเกม
-                                คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
                             </p>
                         </div>
                         <div class="aniPort2">
@@ -216,13 +216,16 @@
             </div>
         </section>
     </div>
-    <script>
-        $(function () {
-            $('.toggleNav').on('click', function () {
-                $('ul.nav2 a').toggleClass('open');
-            });
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    
+    $(function() {
+      $('.toggleNav').on('click',function() {
+        $('.flex-nav ul').toggleClass('open');
+      });
+    });
+
+  </script>
 </body>
 
 </html>
