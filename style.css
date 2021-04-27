@@ -287,19 +287,16 @@ img{
 }
 
   .nav2 a.toggleNav {
-    display: block
+    display: block;
+    size: 20%;
   }
       
-  .nav2 ul a.open{
-    display: flex;
+  ul.nav2 a.open{
+    display: inline-block;
   }
     
   ul.nav2 a{
     display: none;
-  }
-    
-  .nav2 ul a .op{
-    width: 100%;
   }
 
   .icon-scroll{
