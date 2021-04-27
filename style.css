@@ -290,7 +290,7 @@ img{
     display: block
   }
       
-  .nav2 ul a.open{
+  ul.nav2 a.open{
     display: flex;
   }
     
